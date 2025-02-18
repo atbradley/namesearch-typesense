@@ -26,7 +26,7 @@ TYPESENSE_API_KEY = config.get("typesense", "api_key")
 TYPESENSE_HOST = config.get("typesense", "host", fallback="localhost")
 TYPESENSE_PORT = config.get("typesense", "port", fallback="8108")
 TYPESENSE_PROTOCOL = config.get("typesense", "protocol", fallback="http")
-TYPESENSE_COLLECTION = config.get("typsense", "collection", fallback="namesearch")
+TYPESENSE_COLLECTION = config.get("typesense", "collection", fallback="namesearch")
 
 logging.info("Creating Schema.")
 # TODO: Need to store dates so we can search on them.
