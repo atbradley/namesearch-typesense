@@ -42,16 +42,11 @@ The data is structured like this in Typesense:
     "enable_nested_fields": false
 }
 ```
-    name : The full name.
-    address_1 : First line of the address.
-    address_2 : Second line of the address (optional).
-    metaphones :  Double Metaphone values for the name (for potential misspelling handling).
-    embedding :  A vector embedding generated from the name, address_1, and address_2 fields. This is used for vector search. It uses the ts/e5-large-v2 embedding model.
-     
 
-The Hybrid Search Query 
+## The Hybrid Search Query 
 
 The querynames.py script uses the following query: 
+
 ```json
 {
     "collection": "names",  // Replace "names" with your collection name
@@ -64,8 +59,7 @@ The querynames.py script uses the following query:
     "remote_embedding_num_try": 3,
     "per_page": 5
 }
-~
- 
+```
 
 ## Notes:
 
